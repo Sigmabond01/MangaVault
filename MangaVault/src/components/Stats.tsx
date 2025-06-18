@@ -36,10 +36,10 @@ export const Stats = () => {
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
             The Vault of Manga's Most
             <span className="bg-gradient-to-r from-gray-400 to-slate-500 bg-clip-text text-transparent block">
-              Defining Moments
+              Iconic Moments
             </span>
           </h2>
           <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
@@ -98,7 +98,7 @@ export const Stats = () => {
         {/* Footer */}
         <div className="text-center mt-16">
           <p className="text-gray-600 text-sm font-medium">
-            Every panel tells a story • Every moment becomes history
+            Every panel tells a story • Every moment becomes <b>HISTORY</b>
           </p>
         </div>
       </div>
