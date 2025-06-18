@@ -1,16 +1,15 @@
 import { Logo } from "./Logo";
 
-
 export const Hero = () => {
   return (
     <div className="relative flex justify-center items-center bg-[url('/src/assets/narutobg.jpg')] bg-cover bg-center h-screen w-full overflow-hidden">
       <Logo />
 
       {/* Right half black overlay */}
-      <div className="absolute top-0 right-0 w-1/2 h-full  bg-gradient-to-b from-gray-900 to-black z-10" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-gray-900 to-black z-10" />
 
       {/* Optional: subtle full-page dimming */}
-      <div className="absolute inset-0 bg-black/10 z-0 " />
+      <div className="absolute inset-0 bg-black/10 z-0" />
 
       {/* Content container */}
       <div className="relative z-20 flex items-center justify-between w-full max-w-7xl mx-auto">
@@ -36,11 +35,11 @@ export const Hero = () => {
             <button className="px-8 py-3 border-2 text-white backdrop-blur-sm border-white/100 hover:bg-white/10 hover:border-white/50 transition-all duration-300 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105">
               Explore Collection
             </button>
-            <button className="px-8 py-3 border-2 border-white/100 text-white font-semibold rounded-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300">
             <a href="#index">
+            <button className="px-8 py-3 border-2 border-white/100 text-white font-semibold rounded-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300">
             Learn More
-            </a>
             </button>
+            </a>
           </div>
         </div>
       </div>
