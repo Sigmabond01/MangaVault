@@ -65,7 +65,7 @@ export const Stats = () => {
                       style={{
                         backfaceVisibility: "hidden",
                         WebkitBackfaceVisibility: "hidden",
-                        transform: "translateZ(0)", // Force hardware acceleration
+                        transform: "translateZ(0)",
                         imageRendering: "crisp-edges"
                       }}
                     />
