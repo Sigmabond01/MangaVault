@@ -1,5 +1,6 @@
 import { Logo } from "./Logo";
 
+
 export const Hero = () => {
   return (
     <div className="relative flex justify-center items-center bg-[url('/src/assets/narutobg.jpg')] bg-cover bg-center h-screen w-full overflow-hidden">
@@ -9,7 +10,7 @@ export const Hero = () => {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-black z-10" />
 
       {/* Optional: subtle full-page dimming */}
-      <div className="absolute inset-0 bg-black/30 z-0" />
+      <div className="absolute inset-0 bg-black/10 z-0 " />
 
       {/* Content container */}
       <div className="relative z-20 flex items-center justify-between w-full max-w-7xl mx-auto">
@@ -26,7 +27,7 @@ export const Hero = () => {
 
             <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-100 font-medium max-w-2xl ml-auto leading-relaxed drop-shadow-lg">
               Not every panel makes history.{" "}
-              <span className="text-white font-semibold">These did.</span>
+              <span className="text-white font-bold">These did.</span>
             </h2>
           </div>
 

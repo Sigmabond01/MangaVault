@@ -1,9 +1,9 @@
-import { Hero } from './components/hero'
+import Index from './Pages/Index'
 import './App.css'
 
 function App() {
   return (
-      <Hero />
+      <Index />
   )
 }
 
