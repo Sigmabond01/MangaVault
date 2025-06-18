@@ -37,7 +37,9 @@ export const Hero = () => {
               Explore Collection
             </button>
             <button className="px-8 py-3 border-2 border-white/100 text-white font-semibold rounded-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-              Learn More
+            <a href="#index">
+            Learn More
+            </a>
             </button>
           </div>
         </div>
