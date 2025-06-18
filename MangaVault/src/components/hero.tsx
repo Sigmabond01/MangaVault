@@ -7,7 +7,7 @@ export const Hero = () => {
       <Logo />
 
       {/* Right half black overlay */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-black z-10" />
+      <div className="absolute top-0 right-0 w-1/2 h-full  bg-gradient-to-b from-gray-900 to-black z-10" />
 
       {/* Optional: subtle full-page dimming */}
       <div className="absolute inset-0 bg-black/10 z-0 " />

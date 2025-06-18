@@ -1,0 +1,109 @@
+"use client";
+
+import { CardContainer, CardBody, CardItem } from './ui/3d-card'
+
+const stats = [
+  {
+    number: "310+",
+    label: "Panels Saved to Vaults",
+    image: "/src/assets/ftbg.jpg",
+  },
+  {
+    number: "90+",
+    label: "Vaults Created by Users",
+    image: "/src/assets/aotbg.jpg",
+  },
+  {
+    number: "20+",
+    label: "Returning Users Last Week",
+    image: "/src/assets/gojo.jpg",
+  },
+  {
+    number: "15+",
+    label: "Custom Tags Used",
+    image: "/src/assets/yuta.jpg",
+  },
+];
+
+export const Stats = () => {
+  return (
+    <section className="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-500/5 to-black"></div>
+      <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-gray-200/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+      <div className="max-w-7xl mx-auto px-8 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+            The Vault of Manga's Most
+            <span className="bg-gradient-to-r from-gray-400 to-slate-500 bg-clip-text text-transparent block">
+              Defining Moments
+            </span>
+          </h2>
+          <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+            Preserving the most legendary moments in manga history for future generations
+          </p>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {stats.map((stat, index) => (
+            <CardContainer key={index} containerClassName="w-full">
+              <CardBody>
+                <CardItem
+                  translateZ={60}
+                  className="p-6 text-center space-y-4 relative bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-600 hover:border-blue-500/50 rounded-2xl shadow-2xl w-full max-w-sm mx-auto group transition-all duration-500 hover:shadow-slate-500/20"
+                >
+                  {/* Floating image */}
+                  <CardItem translateZ={150} className="relative">
+                    <img
+                      src={stat.image}
+                      alt={stat.label}
+                      className="rounded-xl shadow-2xl w-full h-40 object-cover transition-all duration-700 group-hover:scale-105 hover:shadow-blue-500/30"
+                      style={{
+                        backfaceVisibility: "hidden",
+                        WebkitBackfaceVisibility: "hidden",
+                        transform: "translateZ(0)", // Force hardware acceleration
+                        imageRendering: "crisp-edges"
+                      }}
+                    />
+                  </CardItem>
+
+                  {/* Stat number */}
+                  <CardItem translateZ={120} className="relative">
+                    <div className="text-white text-4xl font-black group-hover:text-blue-400 transition-colors duration-300">
+                      {stat.number}
+                    </div>
+                  </CardItem>
+
+                  {/* Stat label */}
+                  <CardItem translateZ={100} className="relative">
+                    <div className="text-gray-300 text-sm font-semibold uppercase tracking-wider leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                      {stat.label}
+                    </div>
+                  </CardItem>
+
+                  {/* Decorative line */}
+                  <CardItem translateZ={80} className="relative">
+                    <div className="w-12 h-0.5 bg-gradient-to-r from-gray-400 to-blue-500 mx-auto mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </CardItem>
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+          ))}
+        </div>
+
+        {/* Footer */}
+        <div className="text-center mt-16">
+          <p className="text-gray-600 text-sm font-medium">
+            Every panel tells a story • Every moment becomes history
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Stats;
