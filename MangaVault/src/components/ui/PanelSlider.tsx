@@ -1,3 +1,5 @@
+import { FeaturedManga } from "../FeaturedManga";
+
 const PanelSlider = () => {
   const images = [
     "/src/assets/ftbg.jpg",
@@ -16,12 +18,13 @@ const PanelSlider = () => {
             <img
               key={i}
               src={src}
-              className="w-[20vw] h-full object-cover grayscale opacity-100"
+              className="w-[20vw] h-full object-cover grayscale opacity-60"
               alt=""
             />
           ))}
         </div>
       </div>
+      <FeaturedManga />
     </div>
   );
 };
