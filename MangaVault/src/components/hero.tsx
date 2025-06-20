@@ -1,6 +1,11 @@
 import { Logo } from "./Logo";
+import { useNavigate } from "react-router-dom";
+
 
 export const Hero = () => {
+
+  const navigate = useNavigate();
+  
   return (
     <div className="relative flex justify-center items-center bg-[url('/src/assets/narutobg.jpg')] bg-cover bg-center h-screen w-full overflow-hidden">
       <Logo />
@@ -32,7 +37,7 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex justify-end space-x-4 pt-8">
-            <button className="px-8 py-3 border-2 text-white backdrop-blur-sm border-white/100 hover:bg-white/10 hover:border-white/50 transition-all duration-300 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105">
+            <button onClick={() => navigate("/Panels")} className="px-8 py-3 border-2 text-white backdrop-blur-sm border-white/100 hover:bg-white/10 hover:border-white/50 transition-all duration-300 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105">
               Explore Collection
             </button>
             <a href="#index">
