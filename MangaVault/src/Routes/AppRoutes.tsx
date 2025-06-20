@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from '../Pages/Index';
-import { VaultSection } from '../Pages/VaultSection';
+import  VaultSection  from '../Pages/VaultSection';
 
 function App() {
   return (
