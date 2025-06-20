@@ -6,7 +6,7 @@ export const Hero = () => {
       <Logo />
 
       {/* Right half black overlay */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-gray-900 to-black z-10" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-black" />
 
       {/* Optional: subtle full-page dimming */}
       <div className="absolute inset-0 bg-black/10 z-0" />
@@ -17,7 +17,7 @@ export const Hero = () => {
         {/* Main content - right side */}
         <div className="flex-1 space-y-6 text-right ml-8">
           <div className="space-y-4">
-            <h1 className="font-black text-6xl md:text-7xl lg:text-8xl text-white drop-shadow-2xl tracking-tight leading-none">
+            <h1 className="font-black text-6xl md:text-7xl lg:text-8xl text-gray-700 drop-shadow-2xl tracking-tight leading-none">
               Manga
               <span className="text-white">Vault</span>
             </h1>
@@ -26,7 +26,7 @@ export const Hero = () => {
 
             <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-100 font-medium max-w-2xl ml-auto leading-relaxed drop-shadow-lg">
               Not every panel makes history.{" "}
-              <span className="text-white font-bold">These did.</span>
+              <span className="text-gray-700 font-bold">These did.</span>
             </h2>
           </div>
 

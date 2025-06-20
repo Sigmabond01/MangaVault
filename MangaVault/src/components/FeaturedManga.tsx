@@ -5,58 +5,64 @@ export const FeaturedManga = () => {
             title: "Naruto",
             description: "the ninja who became hokage",
             panels: "50+",
-            color: "from-gray-500 to-blue-400"
         },
         {
             title: "Dragon ball",
             description: "The legendary saiyan saga",
             panels: "30+",
-            color: "from-gray-500 to-blue-400"
         },
         {
             title: "Attack on Titan",
             description: "Humanity's fight for survival",
             panels: "45+",
-            color: "from-gray-500 to-blue-400"
         },
         {
             title: "Jujutsu Kaisen",
             description: "Epic journey of itadori and friends",
             panels: "60+",
-            color: "from-gray-500 to-blue-400"
         }
     ];
+
     return (
-        <section className="py-20 bg-slate-900">
+        <section className="py-20 bg relative z-10">
             <div className="max-w-7xl mx-auto px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        Featured <span className="bg-gradient-to-r from-blue-950 to-gray-800 bg-clip-text text-transparent">Collections</span>
+                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+                        Featured
                     </h2>
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                    <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
                         explore our most popular manga series and their most iconic moments
                     </p>
                 </div>
-                <div className="grid gid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {featuredSeries.map((series, index) => (
-                        <div className="group cursor-pointer" key={index}>
-                            <div className="bg-gradient-to-br from-slate-700 to-slate-600 rounded-2xl p-6 border border-slate-500 hover:border-transparent transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden">
-                                <div className={`absolute inset-0 bg-gradient-to-br ${series.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+                        <div 
+                            className="group cursor-pointer transform transition-all duration-500 hover:-translate-y-3" 
+                            key={index}
+                        >
+                            <div className="relative bg-slate-800/30 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden h-full">
+                                {/* Glass morphism overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-slate-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                
+                                {/* Subtle glow effect */}
+                                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-slate-600/20 rounded-3xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
 
-                                <div className="relative z-10">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <h3 className="text-xl font-bold text-white group-hover:text-blue-600 transition-colors">
+                                <div className="relative z-10 flex flex-col h-full">
+                                    <div className="flex items-start justify-between mb-6">
+                                        <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300 leading-tight">
                                             {series.title}
                                         </h3>
-                                        <span className="text-sm text-gray-600 font-medium bg-gray-400/20 px-2 py-1 rounded-full">
+                                        <span className="text-xs text-gray-400 font-medium bg-slate-700/50 backdrop-blur-sm px-3 py-1.5 rounded-full border border-slate-600/30">
                                             {series.panels}
                                         </span>
                                     </div>
-                                    <p className="text-gray-300 mb-6 leading-relaxed">
+                                    
+                                    <p className="text-gray-300 mb-8 leading-relaxed text-sm flex-grow">
                                         {series.description}
                                     </p>
 
-                                    <button className="w-full py-2 text-white font-medium border border-slate-400 rounded-lg hover:bg-white/10 hover:border-blue-600 transition-all duration-300">
+                                    <button className="w-full py-3 px-6 text-white font-medium bg-slate-700/30 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:bg-slate-600/40 hover:border-blue-500/50 hover:text-blue-300 transition-all duration-300 text-sm tracking-wide">
                                         View Collection
                                     </button>
                                 </div>
