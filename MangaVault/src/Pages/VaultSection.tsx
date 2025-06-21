@@ -1,19 +1,21 @@
-// components/MangaVault.jsx
-import { useState } from 'react';
-import { X } from 'lucide-react';
-import { mangaData } from '../data/MangaData';
-import { Logo } from '../components/Logo';
+import { useState } from "react";
+import { X } from "lucide-react";
+import { mangaData } from "../data/MangaData";
+import { Logo } from "../components/Logo";
+
+
+
 
 const VaultSection = () => {
-  const [selectedManga, setSelectedManga] = useState(null);
-  const [selectedPanel, setSelectedPanel] = useState(null);
+  const[selectedManga, setSelectedManga] = useState(null);
+  const[selectedPanel, setSelectedPanel] = useState(null);
 
   const getAllPanels = () => {
     return Object.values(mangaData).flat();
   };
 
   const getFilteredPanels = () => {
-    if (selectedManga) {
+    if(selectedManga) {
       return mangaData[selectedManga] || [];
     }
     return getAllPanels();
@@ -27,50 +29,43 @@ const VaultSection = () => {
     setSelectedPanel(panel);
   };
 
-  const closeModal = () => {
-    setSelectedPanel(null);
-  };
-
-  return (
+  return(
     <div className="min-h-screen bg-gray-50 flex">
-      {/* Sidebar */}
+      {/*sidebar*/}
       <div className="w-64 bg-white shadow-lg border-r border-gray-200">
-        <div className="p-8 border-gray-200">
+        <div className="p-6 border-b border-gray-200">
           <Logo />
+          <p className="text-sm text-gray-600 mt-1">Manga Panel Collection</p>
         </div>
-        
-        <div className="p-4">
-          <button
-            onClick={() => setSelectedManga(null)}
-            className={`w-full text-left px-4 py-3 rounded-lg mb-2 transition-colors ${
-              !selectedManga 
-                ? 'bg-blue-100 text-blue-800 border border-blue-200' 
-                : 'hover:bg-gray-100 text-gray-700'
-            }`}
+
+      <div className="p-4">
+        <button onClick={() => setSelectedManga(null)}
+        className={`w-full text-left px-4 py-3 rounded-lg mb-2 transition-colors ${
+          !selectedManga
+          ? 'bg-blue-100 text-blue-800 border border-blue-200'
+          : 'hover:bg-gray-100 text-gray-700'
+        }`}
+        >All Manga</button>
+
+        {Object.keys(mangaData).map((mangaName) => (
+          <button key={mangaName}
+          onClick={() => handleMangaClick(mangaName)}
+          className={`w-full text-left px-4 py-3 rounded-lg mb-2 transition-colors ${
+            selectedManga === mangaName
+            ? 'bg-blue-100 text-blue-800 border border-blue-200'
+            : 'hover:bg-gray-100 text-gray-700'
+          }`}
           >
-            All Manga
-          </button>
-          
-          {Object.keys(mangaData).map((mangaName) => (
-            <button
-              key={mangaName}
-              onClick={() => handleMangaClick(mangaName)}
-              className={`w-full text-left px-4 py-3 rounded-lg mb-2 transition-colors ${
-                selectedManga === mangaName 
-                  ? 'bg-blue-100 text-blue-800 border border-blue-200' 
-                  : 'hover:bg-gray-100 text-gray-700'
-              }`}
-            >
-              {mangaName}
-              <span className="text-xs text-gray-500 ml-2">
-                ({mangaData[mangaName].length} panels)
-              </span>
+            {mangaName}
+            <span className="text-xs text-gray-500 ml-2">
+              ({mangaData[mangaName].length} panels)
+            </span>
             </button>
-          ))}
-        </div>
+        ))}
       </div>
-      
-      {/* Main Content */}
+      </div>
+
+      {/*Main content*/}
       <div className="flex-1 p-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
@@ -81,14 +76,13 @@ const VaultSection = () => {
               {getFilteredPanels().length} panels available
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+          xl:grid-cols-5 gap-6">
             {getFilteredPanels().map((panel) => (
-              <div
-                key={panel.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                onClick={() => handlePanelClick(panel)}
-              >
+              <div key={panel.id}
+              className="bg-white rounded-xl show-lg overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              onClick={() => handlePanelClick(panel)}>
                 <div className="aspect-[3/4] overflow-hidden">
                   <img
                     src={panel.image}
@@ -109,8 +103,8 @@ const VaultSection = () => {
           </div>
         </div>
       </div>
-      
-      {/* Modal for full image view */}
+
+      {/*Modal for full image*/}
       {selectedPanel && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-xl max-w-4xl max-h-[90vh] overflow-hidden">
