@@ -35,7 +35,7 @@ const VaultSection = () => {
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg border-r border-gray-200">
-        <div className="p-8  border-gray-200">
+        <div className="p-8 border-gray-200">
           <Logo />
         </div>
         
