@@ -90,7 +90,7 @@ interface CardItemProps {
   rotateX?: number;
   rotateY?: number;
   rotateZ?: number;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export const CardItem = ({
