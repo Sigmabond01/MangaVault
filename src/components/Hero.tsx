@@ -6,7 +6,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex justify-center items-center bg-[url('/src/assets/narutobg.webp')] bg-cover bg-center h-screen w-full overflow-hidden">
+    <div className="relative flex justify-center items-center bg-[url('/assets/narutobg.webp')] bg-cover bg-center h-screen w-full overflow-hidden">
       <Logo />
 
       <div className="hidden md:block absolute top-0 right-0 w-0 h-full z-10">
