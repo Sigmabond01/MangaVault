@@ -4,24 +4,24 @@ import { CardContainer, CardBody, CardItem } from './ui/3d-card'
 
 const stats = [
   {
-    number: "310+",
+    number: "50+",
     label: "Panels Saved to Vaults",
-    image: "/src/assets/ftbg.jpg",
+    image: "/src/assets/ftbg.webp",
   },
   {
-    number: "90+",
-    label: "Vaults Created by Users",
-    image: "/src/assets/aotbg.jpg",
+    number: "25+",
+    label: "Handpicked Iconic Scenes",
+    image: "/src/assets/aotbg.webp",
   },
   {
     number: "20+",
     label: "Returning Users Last Week",
-    image: "/src/assets/gojo.jpg",
+    image: "/src/assets/gojo.webp",
   },
   {
-    number: "15+",
-    label: "Custom Tags Used",
-    image: "/src/assets/yuta.jpg",
+    number: "24/7",
+    label: "Access to Rare Panels",
+    image: "/src/assets/yuta.webp",
   },
 ];
 
@@ -35,7 +35,7 @@ export const Stats = () => {
 
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 font-comicneue">
           <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
             The Vault of Manga's Most
             <span className="bg-gradient-to-r from-gray-400 to-slate-500 bg-clip-text text-transparent block">

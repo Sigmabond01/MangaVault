@@ -6,11 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes aurora {
-  from {
-    background-position: 50% 50%, 50% 50%;
-  }
-  to {
-    background-position: 350% 50%, 350% 50%;
-  }
+@font-face {
+  font-family: 'comicneue';
+  src: url('./fonts/ComicNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

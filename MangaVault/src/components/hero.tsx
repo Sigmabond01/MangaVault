@@ -6,7 +6,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex justify-center items-center bg-[url('/src/assets/narutobg.jpg')] bg-cover bg-center h-screen w-full overflow-hidden">
+    <div className="relative flex justify-center items-center bg-[url('/src/assets/narutobg.webp')] bg-cover bg-center h-screen w-full overflow-hidden">
       <Logo />
 
       <div className="hidden md:block absolute top-0 right-0 w-0 h-full z-10">
@@ -37,7 +37,7 @@ export const Hero = () => {
             </h1>
 
              <div className="hidden md:block h-1 w-32 bg-white ml-auto rounded-full" />
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-white drop-shadow-lg max-w-lg md:max-w-2xl ml-auto px-4 md:px-0 text-center md:text-right">
+            <h2 className="text-lg font-comicneue sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-white drop-shadow-lg max-w-lg md:max-w-2xl ml-auto px-4 md:px-0 text-center md:text-right">
             Not every panel makes history.{" "}
               <span className="text-gray-400 font-bold">These did.</span>
             </h2>
