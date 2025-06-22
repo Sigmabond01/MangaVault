@@ -6,22 +6,22 @@ const stats = [
   {
     number: "50+",
     label: "Panels Saved to Vaults",
-    image: "/src/assets/ftbg.webp",
+    image: "/src/public/ftbg.webp",
   },
   {
     number: "25+",
     label: "Handpicked Iconic Scenes",
-    image: "/src/assets/aotbg.webp",
+    image: "/src/public/aotbg.webp",
   },
   {
     number: "20+",
     label: "Returning Users Last Week",
-    image: "/src/assets/gojo.webp",
+    image: "/src/public/gojo.webp",
   },
   {
     number: "24/7",
     label: "Access to Rare Panels",
-    image: "/src/assets/yuta.webp",
+    image: "/src/public/yuta.webp",
   },
 ];
 
