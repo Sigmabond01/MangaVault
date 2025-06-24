@@ -2,7 +2,7 @@ export const JujutsuData = [
     {
         id: 14,
         image: '/JujutsuKaisenPanels/gojo.webp',
-        title: 'Gojos look',
+        title: 'Gojo’s eyes lock in',
         manga: 'Jujutsu Kaisen'
     },
     {
@@ -14,19 +14,19 @@ export const JujutsuData = [
     {
         id: 16,
         image: '/JujutsuKaisenPanels/gojonext.webp',
-        title: 'Gojos defeats curse',
+        title: 'Gojo steps through rubble post-fight',
         manga: 'Jujutsu Kaisen'
     },
     {
         id: 17,
         image: '/JujutsuKaisenPanels/hakkari.webp',
-        title: 'hakkaris dance',
+        title: 'Hakari enters his looping rhythm—death becomes a dance.',
         manga: 'Jujutsu Kaisen'
     },
     {
         id: 18,
         image: '/JujutsuKaisenPanels/honoredone.webp',
-        title: 'Gojo declares himself as The Honored One',
+        title: 'Gojo declares himself The Honored One',
         manga: 'Jujutsu Kaisen'
     },
     {
@@ -38,7 +38,7 @@ export const JujutsuData = [
     {
         id: 20,
         image: '/JujutsuKaisenPanels/sukuna.webp',
-        title: 'Sukunas Domain expansion',
+        title: 'Sukuna’s Domain expansion',
         manga: 'Jujutsu Kaisen'
     },
     {
@@ -74,7 +74,7 @@ export const JujutsuData = [
     {
         id: 26,
         image: '/JujutsuKaisenPanels/yuta.webp',
-        title: 'Yutas declaration',
+        title: 'Yuta’s declaration',
         manga: 'Jujutsu Kaisen'
     },
     {

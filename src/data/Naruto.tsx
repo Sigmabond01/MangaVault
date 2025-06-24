@@ -8,13 +8,13 @@ export const NarutoData = [
     {
         id: 30,
         image: '/NarutoPanels/hokage.webp',
-        title: 'Naruto becomes The Hokage',
+        title: 'Naruto becomes the Seventh Hokage',
         manga: 'Naruto'
     },
     {
         id: 31,
         image: '/NarutoPanels/itachicry.webp',
-        title: 'Itachi decides to spare his brother',
+        title: 'Itachi chooses to spare Sasuke during the massacre',
         manga: 'Naruto'
     },
     {
@@ -32,19 +32,19 @@ export const NarutoData = [
     {
         id: 34,
         image: '/NarutoPanels/itachislove.webp',
-        title: 'Itachi Loves his brother',
+        title: 'Itachi shows love to his little brother',
         manga: 'Naruto'
     },
     {
         id: 35,
         image: '/NarutoPanels/pain.webp',
-        title: 'Pain destroys the hidden leaf village',
+        title: 'Pain unleashes almighty devastation on Konoha',
         manga: 'Naruto'
     },
     {
         id: 36,
         image: '/NarutoPanels/pains.webp',
-        title: 'Who is pain?',
+        title: 'The Six Paths of Pain make their entrance',
         manga: 'Naruto'
     },
     {
@@ -56,7 +56,7 @@ export const NarutoData = [
     {
         id: 38,
         image: '/NarutoPanels/itachireveal.webp',
-        title: 'Itachi joins the akatsuki',
+        title: 'Itachi is summoned into the Akatsuki hideout for induction',
         manga: 'Naruto'
     },
 ]
