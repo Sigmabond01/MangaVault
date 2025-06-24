@@ -2,13 +2,13 @@ export const BluelockData = [
   {
     id: 1,
     image: '/Bluelockpanels/egoist.webp',
-    title: 'Isagi unleashes his ego',
+    title: 'Isagi unleashes his ego and declares himself a striker',
     manga: 'Bluelock'
   },
   {
     id: 2,
     image: '/Bluelockpanels/aiku.webp',
-    title: 'Aiku gains metavision',
+    title: 'Aiku activates metavision and reads the field perfectly',
     manga: 'Bluelock'
   },
   {

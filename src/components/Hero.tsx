@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className="hidden md:block absolute top-0 right-0 w-0 h-full z-10">
         <Vortex backgroundColor="black"
         rangeY={800}
-        particleCount={500}
+        particleCount={50}
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full" />
       </div>
@@ -26,7 +26,7 @@ export const Hero = () => {
         className="flex items-center flex-col justify-center px-2 py-4 w-full h-full" />
       </div>
 
-      <div className="absolute inset-0 bg-black/10 z-0" />
+      <div className="absolute inset-0 bg-black/30 z-0" />
 
       {/* CTA container */}
       <div className="relative z-20 flex items-center justify-between w-full max-w-[90rem] mx-auto px-4 sm:px-6">

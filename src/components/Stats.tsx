@@ -27,7 +27,7 @@ const stats = [
 
 export const Stats = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-t from-gray-900 to-black relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-500/5 to-black"></div>
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-gray-200/10 rounded-full blur-3xl"></div>
