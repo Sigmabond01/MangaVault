@@ -1,5 +1,5 @@
 import {Grid,List} from "lucide-react";
-import { ViewMode } from "../../types/manga";
+import type { ViewMode } from "../../types/manga";
 
 interface ViewToggleProps {
     viewMode : ViewMode;
