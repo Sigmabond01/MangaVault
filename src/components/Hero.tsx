@@ -16,8 +16,6 @@ export const Hero = () => {
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full" />
       </div>
-
-      {/* Mobile vortex - Full width on mobile */}
       <div className="md:hidden absolute inset-0 z-10">
         <Vortex backgroundColor="black"
         rangeY={600}
@@ -28,7 +26,6 @@ export const Hero = () => {
 
       <div className="absolute inset-0 bg-black/30 z-0" />
 
-      {/* CTA container */}
       <div className="relative z-20 flex items-center justify-between w-full max-w-[90rem] mx-auto px-4 sm:px-6">
         <div className="flex-1 space-y-4 sm:space-y-6 text-center md:text-right md:ml-8">
           <div className="space-y-3 sm:space-y-4">
@@ -43,7 +40,7 @@ export const Hero = () => {
             </h2>
           </div>
 
-          {/* CTA Buttons */}
+          {/*Buttons*/}
           <div className="flex flex-col sm:flex-row justify-center md:justify-end space-y-3 sm:space-y-0 sm:space-x-4 pt-6 sm:pt-8">
             <button
               onClick={() => navigate("/Panels")}
