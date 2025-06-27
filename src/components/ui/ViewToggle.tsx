@@ -12,7 +12,7 @@ export const ViewToggle = ({viewMode, onViewModeChange}: ViewToggleProps) => {
             <button onClick={() => onViewModeChange("grid")}
                 className={`p-3 rounded-lg transition-all duration-300 relative overflow-hidden ${
                     viewMode === "grid"
-                    ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
+                    ? "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#27272a] via-[#52525b] to-[#a1a1aa] text-white shadow-lg"
                     : "text-gray-400 hover:text-gray-200 hover:bg-gray-700/50"
                 }`}>
                     <Grid className="w-5 h-5 relative z-10" />
@@ -20,7 +20,7 @@ export const ViewToggle = ({viewMode, onViewModeChange}: ViewToggleProps) => {
                 <button onClick={() => onViewModeChange("list")}
                 className={`p-3 rounded-lg transition-all duration-300 relative overflow-hidden ${
                     viewMode === "list"
-                    ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
+                    ? "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#27272a] via-[#52525b] to-[#a1a1aa] text-white shadow-lg"
                     : "text-gray-400 hover:text-gray-200 hover:bg-gray-700/50"
                 }`}>
                     <List className="w-5 h-5 relative z-10" />

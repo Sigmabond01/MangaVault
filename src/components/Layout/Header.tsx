@@ -33,7 +33,7 @@ export const Header = ({
     const searchRef = useRef<HTMLInputElement>(null);
 
     return (
-        <nav className="bg-gradient-to-r from-gray-950/95 via-gray-900/95 to-gray-950/95 backdrop-blur-xl border-b border-gray-800/50 sticky top-0 z-40">
+        <nav className="bg-black sticky top-0 z-40">
             <div className="px-6 py-4">
                 <div className="flex items-center justify-between">
                     <Navbar />

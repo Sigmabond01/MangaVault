@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import type { MangaName, Panel, ViewMode } from "../types/manga";
-import { LoadingScreen } from "../components/ui/Loadingscreen";
+import  LoadingScreen  from "../components/ui/Loadingscreen";
 import { Header } from "../components/Layout/Header";
 import { PanelGrid } from "../components/ui/PanelGrid";
 import { PanelModal } from "../components/ui/PanelModal";
@@ -70,7 +70,7 @@ const VaultSection = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-400 via-black to-slate-400">
       <Header
         searchTerm={searchTerm}
         onSearchChange={handleSearchChange}

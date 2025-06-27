@@ -28,7 +28,7 @@ export const PanelModal = ({ panel, onClose }: PanelModalProps) => {
                 <div className="flex items-center gap-2">
                     <button onClick={onClose}
                     className="p-3 hover:bg-gray-700/50 rounded-xl transition-all duration-300 group">
-                        <X className="w-6 h-6 text-gray-400 group-hover:text-red-400 transition-colors duration-300" />
+                        <X className="w-6 h-6 text-white group-hover:text-gray-400 transition-colors duration-300" />
                     </button>
                 </div>
                 </div>
