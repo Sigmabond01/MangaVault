@@ -70,7 +70,7 @@ const VaultSection = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-400 via-black to-slate-400">
+    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900">
       <Header
         searchTerm={searchTerm}
         onSearchChange={handleSearchChange}
@@ -85,7 +85,7 @@ const VaultSection = () => {
       />
 
       {/* Main Content */}
-      <div className="p-6 text-center">
+      <div className="p-6 text-center font-comicneue">
         <div className="mb-8">
           <h2 className="text-4xl font-bold text-white mb-2">
             {selectedManga ? selectedManga : "All Manga Panels"}

@@ -9,7 +9,7 @@ export const Navbar = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-t from-gray-400 to-black bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-t from-gray-400 to-gray-300 bg-clip-text text-transparent">
                   MangaVault
                 </h1>
               </div>

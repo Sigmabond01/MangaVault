@@ -13,7 +13,7 @@ export const PanelGrid = ({panels, viewMode, onPanelClick}: PanelGridProps) => {
         return (
             <div className="flex flex-col items-center justify-center h-64 text-gray-500">
                 <div className="relative mb-6">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-gray-500/20 to-slate-500/60 rounded-full blur-xl" />
+                    <div className="absolute -inset-4 bg-gradient-to-t from-gray-400 to-gray-300 rounded-full blur-xl" />
                     <Filter className="w-20 h-20 relative" />
                 </div>
                 <p className="text-2xl font-medium text-gray-300 mb-2">No panels found</p>

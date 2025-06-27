@@ -27,7 +27,7 @@ const stats = [
 
 export const Stats = () => {
   return (
-    <section className="py-24 bg-gradient-to-tr from-slate-400 via-black to-slate-400 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-gray-950 via-black to-gray-900 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}

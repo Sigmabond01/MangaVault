@@ -13,13 +13,13 @@ export const MangaFilterTabs = ({
   allPanelsCount 
 }: MangaFilterTabsProps) => {
   return (
-    <div className="mt-4 flex flex-wrap gap-2">
+    <div className="mt-4 flex flex-wrap gap-2 justify-center">
       <button
         onClick={() => onMangaSelect(null)}
         className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 relative overflow-hidden group ${
           !selectedManga
-            ? "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#27272a] via-[#52525b] to-[#a1a1aa] text-white shadow-lg"
-            : "bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-[#52525b] via-[#a1a1aa] to-[#e4e4e7]"
+            ? "bg-gradient-to-r from-[#0f172a]  to-[#334155] text-white shadow-lg"
+            : "bg-gray-800/80 backdrop-blur-sm text-gray-300 hover:bg-gray-700/80 border border-gray-700/50"
         }`}
       >
         <span className="relative z-10">All Manga</span>
@@ -27,7 +27,7 @@ export const MangaFilterTabs = ({
           {allPanelsCount}
         </span>
         {!selectedManga && (
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#27272a] via-[#52525b] to-[#a1a1aa] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]  to-[#334155] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         )}
       </button>
 
@@ -37,7 +37,7 @@ export const MangaFilterTabs = ({
           onClick={() => onMangaSelect(mangaName === selectedManga ? null : mangaName as MangaName)}
           className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 relative overflow-hidden group ${
             selectedManga === mangaName
-              ? "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#27272a] via-[#52525b] to-[#a1a1aa] text-white shadow-lg"
+              ? "bg-gradient-to-r from-[#0f172a]  to-[#334155] text-white shadow-lg"
               : "bg-gray-800/80 backdrop-blur-sm text-gray-300 hover:bg-gray-700/80 border border-gray-700/50"
           }`}
         >
@@ -46,7 +46,7 @@ export const MangaFilterTabs = ({
             {mangaData[mangaName as MangaName].length}
           </span>
           {selectedManga === mangaName && (
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#27272a] via-[#52525b] to-[#a1a1aa] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]  to-[#334155] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           )}
         </button>
       ))}
